@@ -1,15 +1,15 @@
 import React from "react";
-import Landing from "./pages/Landing";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Landing, Register, Error, Dashboard } from "./pages";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<div>Dashboard</div>}></Route>
-        <Route path="/register" element={<div>Register</div>}></Route>
+        <Route path="/" element={<Dashboard />}></Route>
+        <Route path="/register" element={<Register />}></Route>
         <Route path="/landing" element={<Landing />}></Route>
-        <Route path="*" element={<h1>ERROR</h1>}></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
   );
