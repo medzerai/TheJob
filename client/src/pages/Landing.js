@@ -1,6 +1,6 @@
 import React from "react";
 import main from "../assets/images/job_1.svg";
-import Wrapper from "../assets/wrappers/testing";
+import Wrapper from "../assets/wrappers/LandingPage";
 import { Logo } from "../components";
 
 const Landing = () => {
